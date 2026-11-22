@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinations - Travelia</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">Travelia<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu">☰</button>
+    <nav id="navMenu"><a href="index.html">Accueil</a><a class="active" href="destinations.html">Destinations</a><a href="contact.html">Contact</a></nav>
+  </header>
+  <main>
+    <section class="page-heading"><p class="small-title">Nos offres</p><h1>Choisissez votre destination</h1><p>Découvrez nos destinations et trouvez votre prochain voyage.</p></section>
+    <section class="section">
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">Toutes</button>
+        <button class="filter-btn" data-filter="mer">Mer</button>
+        <button class="filter-btn" data-filter="ville">Ville</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+      </div>
+      <div class="cards" id="destinationCards">
+        <article class="card destination-card" data-category="ville"><img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=800&q=80" alt="Italie"><div class="card-content"><h3>Italie</h3><p>5 jours / 4 nuits</p><strong>À partir de 650 DT</strong></div></article>
+        <article class="card destination-card" data-category="nature"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Suisse"><div class="card-content"><h3>Suisse</h3><p>6 jours / 5 nuits</p><strong>À partir de 900 DT</strong></div></article>
+        <article class="card destination-card" data-category="mer"><img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=800&q=80" alt="Maldives"><div class="card-content"><h3>Maldives</h3><p>7 jours / 6 nuits</p><strong>À partir de 1200 DT</strong></div></article>
+        <article class="card destination-card" data-category="ville"><img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80" alt="Paris"><div class="card-content"><h3>Paris</h3><p>4 jours / 3 nuits</p><strong>À partir de 700 DT</strong></div></article>
+      </div>
+    </section>
+    <section class="section calculator">
+      <h2>Calculer le prix de votre voyage</h2><p class="section-desc">Choisissez une destination et le nombre de personnes.</p>
+      <label for="destinationPrice">Destination</label>
+      <select id="destinationPrice"><option value="650">Italie - 650 DT/personne</option><option value="900">Suisse - 900 DT/personne</option><option value="1200">Maldives - 1200 DT/personne</option><option value="700">Paris - 700 DT/personne</option></select>
+      <label for="people">Nombre de personnes</label><input id="people" type="number" min="1" value="1">
+      <button class="btn" id="calculateBtn">Calculer</button><p id="priceResult" class="result">Le prix total apparaîtra ici.</p>
+    </section>
+  </main>
+  <footer><p>© 2026 Travelia - Agence de voyage</p></footer>
+</body>
+</html>

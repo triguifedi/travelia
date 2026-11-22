@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Travelia</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">Travelia<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu">☰</button>
+    <nav id="navMenu"><a href="index.html">Accueil</a><a href="destinations.html">Destinations</a><a class="active" href="contact.html">Contact</a></nav>
+  </header>
+  <main>
+    <section class="contact-banner">
+      <p class="small-title">Un projet de voyage ?</p>
+      <h1>Parlons de votre prochaine aventure.</h1>
+      <p>Quelques informations suffisent pour nous aider à préparer votre séjour.</p>
+    </section>
+    <section class="contact-section contact-layout">
+      <form id="contactForm" class="contact-form">
+        <h2>Envoyez-nous un message</h2>
+        <p class="form-intro">Les champs avec * sont obligatoires.</p>
+        <div class="form-row">
+          <div><label for="name">Nom complet *</label><input type="text" id="name" placeholder="Votre nom" required></div>
+          <div><label for="email">E-mail *</label><input type="email" id="email" placeholder="exemple@email.com" required></div>
+        </div>
+        <div class="form-row">
+          <div><label for="phone">Téléphone</label><input type="tel" id="phone" placeholder="+216 ..."></div>
+          <div><label for="destination">Destination souhaitée</label>
+            <select id="destination"><option value="">Choisir une destination</option><option>Italie</option><option>Suisse</option><option>Maldives</option><option>Paris</option><option>Autre destination</option></select>
+          </div>
+        </div>
+        <label for="people">Nombre de voyageurs</label>
+        <select id="people"><option value="1">1 personne</option><option value="2" selected>2 personnes</option><option value="3">3 personnes</option><option value="4">4 personnes</option><option value="5">5 personnes ou plus</option></select>
+        <label for="message">Votre message *</label>
+        <textarea id="message" rows="5" placeholder="Dates, budget ou détails de votre voyage..." required></textarea>
+        <button class="btn form-submit" type="submit">Envoyer le message <span>→</span></button>
+        <p id="formMessage" class="form-message" role="status"></p>
+      </form>
+      <aside class="contact-info contact-side">
+        <div class="contact-photo"></div>
+        <div class="contact-icon">✈</div><h2>Un voyage à préparer ?</h2>
+        <p>Notre petite équipe est là pour vous aider à choisir une destination et organiser vos vacances.</p>
+        <div class="info-item"><span>📍</span><div><strong>Adresse</strong><p>Tunis, Tunisie</p></div></div>
+        <div class="info-item"><span>☎</span><div><strong>Téléphone</strong><p>+216 20 000 000</p></div></div>
+        <div class="info-item"><span>✉</span><div><strong>E-mail</strong><p>contact@travelia.tn</p></div></div>
+        <div class="contact-note">Nous vous répondrons dès que possible. Merci pour votre confiance !</div>
+      </aside>
+    </section>
+  </main>
+  <footer><p>© 2026 Travelia - Agence de voyage</p></footer>
+</body>
+</html>
